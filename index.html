@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natuatelie - Papel Reciclado Colorido</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c6e49;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #1f4f3b;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            background-color: #3b7f61;
+        }
+        section {
+            padding: 50px 20px;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product {
+            background-color: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .product .price {
+            font-size: 1.4em;
+            color: #2c6e49;
+            margin-top: 10px;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+        .contact-form button {
+            background-color: #2c6e49;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        footer {
+            background-color: #1f4f3b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Natuatelie</h1>
+        <p>Transformando o papel reciclado em arte com tintas naturais</p>
+    </header>
+
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#products">Produtos</a>
+        <a href="#sustainability">Sustentabilidade</a>
+        <a href="#contact">Contato</a>
+    </nav>
+
+    <section id="home">
+        <h2>Bem-vindo à Natuatelie!</h2>
+        <p>Descubra o papel reciclado colorido, pintado com tintas naturais para dar vida e sustentabilidade ao seu dia a dia. Explore nossos produtos e conheça as práticas sustentáveis que nos guiam.</p>
+    </section>
+
+    <section id="products">
+        <h2>Produtos</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://texpapel.cdn.magazord.com.br/img/2024/03/produto/27043/132-papel-reciclado-rosa-nude-ref-rc132.jpg?ims=600x600" alt="Papel Reciclado Rosa Nude">
+                <h3>Papel Reciclado Rosa Nude</h3>
+                <p>Feito com papel reciclado e tinta natural. Ideal para projetos artísticos e comerciais.</p>
+                <div class="price">R$ 12,00 por unidade</div>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUgSYG4blKxzbMgLLvQK0J0Ek1WvYD3rc9cQ&s" alt="Papel Reciclado Azul Claro">
+                <h3>Papel Reciclado Azul Claro</h3>
+                <p>Papel ecológico para quem valoriza a arte sustentável com tonalidades suaves e elegantes.</p>
+                <div class="price">R$ 15,00 por unidade</div>
+            </div>
+            <div class="product">
+                <img src="https://a-static.mlcdn.com.br/800x560/papel-reciclado-amarelo-ref-rc121-tex-papel/texpapel/rc121-a/09cabf63b67e9716d597b5b431b24d49.jpeg" alt="Papel Reciclado Amarelo">
+                <h3>Papel Reciclado Amarelo</h3>
+                <p>Perfeito para criar designs vibrantes e sustentáveis. Ideal para artistas e empresas.</p>
+                <div class="price">R$ 10,00 por unidade</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sustainability">
+        <h2>Práticas Sustentáveis</h2>
+        <p>Na Natuatelie, trabalhamos com a ideia de sustentabilidade em cada detalhe. Nosso processo de produção utiliza materiais reciclados e tintas naturais, reduzindo o impacto ambiental e promovendo a conscientização ecológica. Ao escolher nossos produtos, você está contribuindo para um futuro mais verde.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Entre em Contato</h2>
+        <form class="contact-form">
+            <label for="name">Seu Nome</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+            <label for="email">Seu E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="message">Sua Mensagem</label>
+            <textarea id="message" name="message" placeholder="Deixe sua mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Natuatelie - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
